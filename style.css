@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  color: white;
+  background-color: rgb(106, 33, 165);
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  padding: 10px 0px;
+}
+
+header p {
+  padding: 10px 0px;
+}
+
+.modal{
+  position: fixed;
+  top: 20%;
+  left: 31%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+  display:none;
+}
+
+#backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+aside {
+  background-color: white;
+  margin: 10px auto;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+aside h2 {
+  padding: 10px 0;
+}
+
+form label {
+  display: block;
+  padding: 5px 0;
+  color: rgb(106, 33, 165);
+}
+
+form input {
+  width: 300px;
+  display: block;
+  margin: 10px auto;
+}
+
+#error{
+  font: inherit;
+  color: white;
+  font-size: 16px;
+  background-color: rgb(182, 35, 35);
+}
+
+form button {
+  font: inherit;
+  padding: 6px 10px;
+  margin: 10px 8px;
+}
+
+#cancel-button {
+  background-color: white;
+  color: rgb(106, 33, 165);
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+#cancel-button:hover {
+  background-color:rgb(189, 159, 212);
+  color: white;
+}
+
+#confirm-button {
+  background-color: rgb(106, 33, 165);
+  color: white;
+  border: 2px solid rgb(106, 33, 165);
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+#confirm-button:hover{
+  background-color:rgb(142, 43, 223);
+  border-color:rgb(142, 43, 223) ;
+}
+
+#players {
+  display: flex;
+  justify-content: center;
+}
+
+#player {
+  width: 200px;
+  height: 120px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 50px 20px 20px 20px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+#player p {
+  padding: 2px 0px;
+  font-weight: 700;
+}
+
+#player-name {
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(106, 33, 165);
+}
+
+#cross-oval {
+  padding: 5px 0;
+  margin-bottom: 7px;
+}
+
+#player button {
+  border: none;
+  color: rgb(106, 33, 165);
+  font: inherit;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+#player button:hover{
+  background-color:rgb(189, 159, 212);
+  color: white;
+}
+
+#btn {
+  text-align: center;
+}
+
+#btn button {
+  font: inherit;
+  width: 200px;
+  font-size: 15px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(106, 33, 165);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn button:hover{
+  background-color:rgb(142, 43, 223);
+}
+
+
+#game-section {
+  text-align: center;
+  padding: 40px 0;
+  display: none;
+
+}
+
+#game-over{
+  background-color: rgb(106, 33, 165);
+  width: 600px;
+  padding: 30px 20px;
+  margin: 10px auto;
+  color: white;
+  border-radius: 9px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#game-section h2{
+  font-size: 40px;
+  padding: 5px 0px;
+
+}
+
+#game-section h3{
+  padding: 5px 0px;
+  
+}
+
+#game-section p{
+  padding: 10px 0px;
+}
+
+
+#game {
+  padding: 20px 0px;
+  
+}
+
+#game ul {
+  display: flex;
+  justify-content: center;
+}
+
+#game li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  margin: 2px;
+  background-color: rgb(194, 160, 223);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#game li:hover{
+  background-color: rgb(106, 33, 165);
+}
+
+#game li.disabled{
+  background-color: rgb(106, 33, 165);
+  cursor: default;
+}
+
